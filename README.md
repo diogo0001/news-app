@@ -1,6 +1,6 @@
 # CKL#1_Android_Diogo_Tavares
 
-Displays the list of articles provided by the [cheesecakelabs.com/challenge](https://cheesecakelabs.com/challenge). Presents options to show all content, sort list, filter by tags and reload list.
+Displays the list of articles provided by JSON endpoint. Presents options to show all content, sort list, filter by tags and reload list.
 
 ## Features
 
