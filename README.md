@@ -36,6 +36,6 @@ Displays the list of articles provided by JSON endpoint. Presents options to sho
 - [Realm Android](https://realm.io/docs/java/latest) - Local data persistence
 - [Picasso](http://square.github.io/picasso/) - Downloading and caching images
 - [Bungee](https://github.com/Binary-Finery/Bungee) - Screen transitions
-- [Andoid View Animations](https://github.com/daimajia/AndroidViewAnimations) - Animations
+- [Android View Animations](https://github.com/daimajia/AndroidViewAnimations) - Animations
 
 ## Installation
