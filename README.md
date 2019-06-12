@@ -38,4 +38,3 @@ Displays the list of articles provided by JSON endpoint. Presents options to sho
 - [Bungee](https://github.com/Binary-Finery/Bungee) - Screen transitions
 - [Android View Animations](https://github.com/daimajia/AndroidViewAnimations) - Animations
 
-## Installation
