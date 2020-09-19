@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1d5084</color>
+    <color name="colorPrimaryDark">#132a4b</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="darkGrey">#333333</color>
+    <color name="white">#ffffff</color>
+    <color name="tag_bg">#66aaee</color>
+    <color name="item_bg">#fffff9</color>
+    <color name="detail_bg">#0decea4b</color>
+    <color name="title_bg">#0f303030</color>
+
+    <color name="colorRipple">#9359373f</color>
+
+</resources>
+

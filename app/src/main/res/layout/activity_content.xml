@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/detail_bg"
+    tools:context=".ContentActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarData"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:theme="@style/Theme.MyTheme2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="20dp"
+            android:text="Details"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:layout_marginRight="?android:attr/actionBarSize"
+            android:gravity="center"/>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/const_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:transitionName="imageViewTrans"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintDimensionRatio="h,16:9"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@null" />
+            </android.support.constraint.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/title"
+                android:transitionName="titleTrans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="4dp"
+                android:paddingTop="20dp"
+                android:background="@color/title_bg"
+                android:textStyle="bold"
+                android:text="No title"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp"
+                android:layout_below="@+id/const_view"
+                android:layout_alignParentStart="true" />
+
+            <LinearLayout
+                android:id="@+id/dateLayout"
+                android:layout_below="@+id/title"
+                android:orientation="horizontal"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="16dp"
+                android:paddingRight="6dp"
+                android:gravity="top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageDate"
+                    android:layout_width="18dp"
+                    android:layout_height="20dp"
+                    android:paddingTop="2dp"
+                    android:alpha="0.76"
+                    app:srcCompat="@drawable/calendar_clock" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:textStyle="bold"
+                    android:alpha="0.85"
+                    android:textColor="@color/darkGrey"
+                    android:text="No info"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dateLayout"
+                android:layout_alignStart="@+id/dateLayout"
+                android:paddingRight="6dp"
+                android:layout_marginBottom="12dp"
+                android:alpha="0.9"
+                android:textStyle="bold"
+                android:textColor="@color/darkGrey"
+                android:text="No content"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/content"
+                android:layout_alignStart="@+id/dateLayout"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:alpha="0.85"
+                android:textColor="@color/darkGrey"
+                android:text="No info"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/linear_tags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="6dp"
+                android:layout_marginBottom="12dp"
+                android:layout_below="@+id/website"
+                android:layout_alignStart="@+id/dateLayout">
+
+                <TextView
+                    android:id="@+id/tags"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkGrey"
+                    android:text="Tags: "
+                    android:textStyle="bold"
+                    android:alpha="0.85"
+                    android:layout_marginRight="4dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
